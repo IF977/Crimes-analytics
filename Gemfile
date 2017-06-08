@@ -62,9 +62,14 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'capybara'
-  gem 'capybara-webkit'
+  # gem 'capybara-webkit'
 end
 
 group :test do
   gem 'rspec-rails'
 end
+
+#gem 'kaminari' usado para paginação
+
+gem 'chartkick'
+gem 'groupdate'
