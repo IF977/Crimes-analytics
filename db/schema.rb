@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170520223950) do
+ActiveRecord::Schema.define(version: 20170603152545) do
+
+  create_table "chamados", force: :cascade do |t|
+    t.string   "numero_solicitacao"
+    t.date     "data_solicitacao"
+    t.string   "sexo"
+    t.string   "idade"
+    t.string   "codigo_bairro"
+    t.string   "bairro"
+    t.string   "origem_chamado"
+    t.string   "situacao_chamado"
+    t.string   "tipo_chamada"
+    t.string   "motivo_descarte"
+    t.string   "tipo_ocorrencia"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "coments", force: :cascade do |t|
     t.string   "email"
