@@ -1,0 +1,61 @@
+<%= form_for(@chamado) do |f| %>
+  <% if @chamado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@chamado.errors.count, "error") %> prohibited this chamado from being saved:</h2>
+
+      <ul>
+      <% @chamado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numero_solicitacao %><br>
+    <%= f.text_field :numero_solicitacao %>
+  </div>
+  <div class="field">
+    <%= f.label :data_solicitacao %><br>
+    <%= f.date_select :data_solicitacao %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br>
+    <%= f.text_field :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :idade %><br>
+    <%= f.text_field :idade %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo_bairro %><br>
+    <%= f.text_field :codigo_bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :bairro %><br>
+    <%= f.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :origem_chamado %><br>
+    <%= f.text_field :origem_chamado %>
+  </div>
+  <div class="field">
+    <%= f.label :situacao_chamado %><br>
+    <%= f.text_field :situacao_chamado %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_chamada %><br>
+    <%= f.text_field :tipo_chamada %>
+  </div>
+  <div class="field">
+    <%= f.label :motivo_descarte %><br>
+    <%= f.text_field :motivo_descarte %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo_ocorrencia %><br>
+    <%= f.text_field :tipo_ocorrencia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

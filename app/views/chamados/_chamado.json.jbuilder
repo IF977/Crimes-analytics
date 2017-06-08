@@ -1,0 +1,2 @@
+json.extract! chamado, :id, :numero_solicitacao, :data_solicitacao, :sexo, :idade, :codigo_bairro, :bairro, :origem_chamado, :situacao_chamado, :tipo_chamada, :motivo_descarte, :tipo_ocorrencia, :created_at, :updated_at
+json.url chamado_url(chamado, format: :json)

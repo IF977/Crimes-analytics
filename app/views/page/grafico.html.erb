@@ -1,0 +1,4 @@
+<%= pie_chart({"Homens" => Chamado.where(sexo: 'M').count, "Mulheres" => Chamado.where(sexo: 'F').count}) %>
+
+
+<%= link_to 'Voltar', pesquisa_path %>

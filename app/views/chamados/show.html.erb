@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numero solicitacao:</strong>
+  <%= @chamado.numero_solicitacao %>
+</p>
+
+<p>
+  <strong>Data solicitacao:</strong>
+  <%= @chamado.data_solicitacao %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @chamado.sexo %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @chamado.idade %>
+</p>
+
+<p>
+  <strong>Codigo bairro:</strong>
+  <%= @chamado.codigo_bairro %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @chamado.bairro %>
+</p>
+
+<p>
+  <strong>Origem chamado:</strong>
+  <%= @chamado.origem_chamado %>
+</p>
+
+<p>
+  <strong>Situacao chamado:</strong>
+  <%= @chamado.situacao_chamado %>
+</p>
+
+<p>
+  <strong>Tipo chamada:</strong>
+  <%= @chamado.tipo_chamada %>
+</p>
+
+<p>
+  <strong>Motivo descarte:</strong>
+  <%= @chamado.motivo_descarte %>
+</p>
+
+<p>
+  <strong>Tipo ocorrencia:</strong>
+  <%= @chamado.tipo_ocorrencia %>
+</p>
+
+<%= link_to 'Edit', edit_chamado_path(@chamado) %> |
+<%= link_to 'Back', chamados_path %>
