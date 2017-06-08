@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_solicitacao: MyString
+  data_solicitacao: 2017-06-03
+  sexo: MyString
+  idade: MyString
+  codigo_bairro: MyString
+  bairro: MyString
+  origem_chamado: MyString
+  situacao_chamado: MyString
+  tipo_chamada: MyString
+  motivo_descarte: MyString
+  tipo_ocorrencia: MyString
+
+two:
+  numero_solicitacao: MyString
+  data_solicitacao: 2017-06-03
+  sexo: MyString
+  idade: MyString
+  codigo_bairro: MyString
+  bairro: MyString
+  origem_chamado: MyString
+  situacao_chamado: MyString
+  tipo_chamada: MyString
+  motivo_descarte: MyString
+  tipo_ocorrencia: MyString
