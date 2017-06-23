@@ -2,8 +2,15 @@ Rails.application.routes.draw do
   resources :chamados
   resources :coments
   root 'page#home'
-  get 'grafico' => 'page#grafico'
   get 'pesquisa' => 'page#pesquisa'
+  
+  get '/grafico/idade' => 'page#idade'
+  get '/grafico/genero' => 'page#genero'
+  get '/grafico/trotes' => 'page#trotes'
+  get '/grafico/quantidade-de-chamado-por-mes' => 'page#pormes'
+  get '/grafico/bairro' => 'page#bairro'
+  get '/grafico/descarte' => 'page#descarte'
+  get '/grafico/ocorrencia' => 'page#ocorrencia'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
