@@ -29,10 +29,9 @@ Atividade | Atribuição
  
 ## Lições aprendidas
 
-* Iteração controller com a view
+* Iteração controller com a view.
 * Ultilizar o chamado sql para ajudar na formação dos gráficos.
-* Melhor intendimento da gem groupdate que permitiu uma melhor formatação dos dados
-* 
+* Melhor intendimento da gem groupdate que permitiu uma melhor formatação dos dados.
 
 
 
