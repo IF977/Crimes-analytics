@@ -1,10 +1,28 @@
 class ChamadosController < ApplicationController
   before_action :set_chamado, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /chamados
   # GET /chamados.json
   def index
-    @chamados = Chamado.all
+    if params[:graph] == 'idade'
+      redirect_to '/grafico/idade'
+    elsif params[:graph] == 'genero'
+      redirect_to '/grafico/genero'
+    elsif params[:graph] == 'trotes'
+      redirect_to '/grafico/trotes'
+    elsif params[:graph] == 'cpormes'
+      redirect_to '/grafico/quantidade-de-chamado-por-mes'
+    elsif params[:graph] == 'bairro'
+      redirect_to '/grafico/bairro'
+    elsif params[:graph] == 'descarte'
+      redirect_to '/grafico/descarte'
+    elsif params[:graph] == 'ocorrencia'
+      redirect_to '/grafico/ocorrencia'
+    else
+      redirect_to '/pesquisa'
+
+    end
+    #@chamados = Chamado.all
   end
 
   # GET /chamados/1
